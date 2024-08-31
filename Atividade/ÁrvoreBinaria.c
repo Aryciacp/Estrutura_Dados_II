@@ -127,7 +127,7 @@ int main(void) {
     no* raiz = NULL;
 
     // Inserção de nós
-    int valores[] = {12, 8, 15, 7, 4, 6, 13, 14, 11, 10};
+    int valores[] = {11, 22, 17, 45, 33, 66, 19, 45, 32, 26};
     int tamanho = sizeof(valores) / sizeof(valores[0]);
 
     for (int i = 0; i < tamanho; i++) {
@@ -139,7 +139,7 @@ int main(void) {
     imprimirArvore(raiz, 0);
 
     // Remove um nó e exibe a árvore depois
-    int valorRemover = 8;
+    int valorRemover = 33;
     raiz = removerNo(raiz, valorRemover);
     printf("\nÁrvore após remoção: %d:\n", valorRemover);
     imprimirArvore(raiz, 0);
